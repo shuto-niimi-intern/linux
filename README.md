@@ -12,13 +12,13 @@
 - [mnt](https://github.com/shuto-niimi-intern/linux/mnt)  
 - [opt](https://github.com/shuto-niimi-intern/linux/opt)  
 - [proc](https://github.com/shuto-niimi-intern/linux/proc) プロセスの基本情報が記述されたファイルが格納
-    - cgroups 
-    - cmdline
-    - tty 
-    - crypto
-    - consoles
-    - filesystems
-    - mounts
+    - [cgroups](https://github.com/shuto-niimi-intern/linux/proc/cgroups.md) 
+    - [cmdline](https://github.com/shuto-niimi-intern/linux/proc/cmdline.md)
+    - [tty](https://github.com/shuto-niimi-intern/linux/proc/tty.md) 
+    - [crypto](https://github.com/shuto-niimi-intern/linux/proc/crypto.md)
+    - [consoles](https://github.com/shuto-niimi-intern/linux/proc/consoles.md)
+    - [filesystems](https://github.com/shuto-niimi-intern/linux/proc/filesystems.md)
+    - [mounts](https://github.com/shuto-niimi-intern/linux/proc/mounts.md)
 - [root](/root)  
 - [run](/run)  
 - [sbin](/sbin)  
