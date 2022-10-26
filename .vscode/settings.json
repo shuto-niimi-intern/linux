@@ -3,6 +3,17 @@
         "Diffie",
         "ECDH",
         "Helman",
-        "systemmd"
-    ]
+        "systemmd",
+        "classmethod",
+        "Sysvinit",
+        "pstree",
+        "cgroups"
+    ],
+    "remark.format": {
+        "rules": {
+            "bullet": "*",
+            "listItemIndent": 1,
+            "fences": true,
+        }
+    },
 }
