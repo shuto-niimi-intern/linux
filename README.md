@@ -22,20 +22,21 @@
     * Systemd: そしてFedora 15やCentOS 7、Red Hat Enterprise Linux 7で採用された
 
 ## systemdとは?
-### 結論 : プロセスをPIDではなくcgroupsで管理できるようになった。
-- 特徴 
-    - 最初から最後まで実行するシェルスクリプトではない。
-        - サービスを1つのシェルスクリプトではなくUnitという単位で管理し、設定ファイルとして持つ。
-        - 処理の細分化、個別実行が可能に
-        - また処理ごとの依存関係(tree構造？)
-          - pstree
-        - 並列実行も可能 A → B,Cを並列処理など
-        - 参考画像 : [Classmethod /etc/init.d/sshd or /usr/lib/system/system/sshd.service](https://cdn-ssl-devio-img.classmethod.jp/wp-content/uploads/2015/02/16b644d51d9196c8d6912f1cd86d32f3.png?_ga=2.107428802.1556591799.1666764705-2049168855.1664779881)
-    - プロセス起動を柔軟に???
-        - 様々なトリガーを契機にプロセスの起動が行えます。
-    - PIDではなくcgroupによってプロセスを管理(名前空間)
-        - [cgroups](https://wiki.archlinux.jp/index.php/Cgroups?rdfrom=https%3A%2F%2Fwiki.archlinux.org%2Findex.php%3Ftitle%3DCgroups_%28%25E6%2597%25A5%25E6%259C%25AC%25E8%25AA%259E%29%26redirect%3Dno)
 
+### 結論 : プロセスをPIDではなくcgroupsで管理できるようになった。
+
+* 特徴 
+  * 最初から最後まで実行するシェルスクリプトではない。
+    * サービスを1つのシェルスクリプトではなくUnitという単位で管理し、設定ファイルとして持つ。
+    * 処理の細分化、個別実行が可能に
+    * また処理ごとの依存関係(tree構造？)
+      * pstree
+    * 並列実行も可能 A → B,Cを並列処理など
+    * 参考画像 : [Classmethod /etc/init.d/sshd or /usr/lib/system/system/sshd.service](https://cdn-ssl-devio-img.classmethod.jp/wp-content/uploads/2015/02/16b644d51d9196c8d6912f1cd86d32f3.png?_ga=2.107428802.1556591799.1666764705-2049168855.1664779881)
+  * プロセス起動を柔軟に???
+    * 様々なトリガーを契機にプロセスの起動が行えます。
+  * PIDではなくcgroupによってプロセスを管理(名前空間)
+    * [cgroups](https://wiki.archlinux.jp/index.php/Cgroups?rdfrom=https%3A%2F%2Fwiki.archlinux.org%2Findex.php%3Ftitle%3DCgroups_%28%25E6%2597%25A5%25E6%259C%25AC%25E8%25AA%259E%29%26redirect%3Dno)
 
 ## ファイル構造から中身の意味を確認
 
